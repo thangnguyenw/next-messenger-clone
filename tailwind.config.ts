@@ -11,6 +11,10 @@ const config: Config = {
       backgroundImage: {},
     },
   },
-  plugins: [],
+  plugins: [
+    require('@tailwindcss/forms')({
+      strategy: 'class',
+    })
+  ],
 }
 export default config
